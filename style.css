@@ -1,4 +1,4 @@
-.home-page, .contact-page, .feedback-page {
+.home-page{
     font-family: 'Poppins', sans-serif;
     background-color: #040404;
     color: #fcfaf9;
@@ -6,9 +6,7 @@
     background: transparent;
 }
 
-.home-page::before,
-.contact-page::before,
-.feedback-page::before {
+.home-page::before {
     content: "";
     position: fixed;
     background: #040404 url("background.jpg") top right no-repeat;
@@ -20,7 +18,7 @@
     z-index: -1;
 }
 
-@media (min-width: 1024px;) {
+@media (min-width: 1024px) {
     .home-page::before {
         background-attachment: fixed;
     }
@@ -50,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: ease-in-out 0.3s;
     position: relative;
     height: 100vh;
-    display: flex;
     align-items: center;
     z-index: 997;
     overflow-y: auto;
