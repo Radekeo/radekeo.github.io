@@ -88,43 +88,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
 }
 
-#header .social a{
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
-    margin-right: 10px;
-    border-radius: 50%;
-
-}
-
-/* make it responsive */
-@media (max-width:992px) {
-    #header h1 {
-        font-size: 36px;
-    }
-    #header h2 {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    #header .social {
-        margin-top: 15px;
-    }
-
-    #header .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/*======= Navigation Menu=======*/
-.nav-menu {
-    margin-top: -500px;
-    margin-left: 80%;
-}
-
 .nav-menu ul {
     display: flex;
     margin: 0;
