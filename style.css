@@ -1,22 +1,12 @@
 .home-page{
     font-family: 'Poppins', sans-serif;
-    background-color: #040404;
-    color: #fcfaf9;
+    background-color: #fcfaf9;
+    color: #040404;
     position: relative;
     background: transparent;
 }
 
-.home-page::before {
-    content: "";
-    position: fixed;
-    background: #040404 url("background.jpg") top right no-repeat;
-    left: 0;
-    background-size: cover;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    z-index: -1;
-}
+.
 
 @media (min-width: 1024px) {
     .home-page::before {
@@ -45,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header {
     background-color: rgba(39,65,86,0.5);
+    color: #fcfaf9;
     transition: ease-in-out 0.3s;
     display: grid;
     position: relative;
@@ -228,7 +219,6 @@ h1, h2, h3, h4, h5, h6 {
 
 footer {
     height: 8vh;
-    background: orange;
     text-align: center;
 }
 
