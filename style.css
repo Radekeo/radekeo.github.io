@@ -1,0 +1,402 @@
+.home-page, .contact-page, .feedback-page {
+    font-family: 'Poppins', sans-serif;
+    background-color: #040404;
+    color: #fcfaf9;
+    position: relative;
+    background: transparent;
+}
+
+.home-page::before,
+.contact-page::before,
+.feedback-page::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("background.jpg") top right no-repeat;
+    left: 0;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+@media (min-width: 1024px;) {
+    .home-page::before {
+        background-attachment: fixed;
+    }
+}
+
+ a {
+        color: #fff;
+    }
+
+a:hover {
+    color: orange;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*======= Header =======*/
+
+#header {
+    background-color: rgba(39,65,86,0.5);
+    transition: ease-in-out 0.3s;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 997;
+    overflow-y: auto;
+}
+
+#header * {
+    transition: ease-in-out 0.3s;
+}
+
+#header h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+}
+
+#header h1 a,
+#header h1 a:hover {
+    color: #fff;
+    line-height: 1;
+    display: inline-block;
+}
+
+#header h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+#header h2 span{
+    color: #fcfaf9;
+    border-bottom: 2px solid #fcfaf9;
+    padding-bottom:6px;
+}
+
+#header h2 span:hover{
+    color: #ffa500;
+    border-bottom: 2px solid #461220;
+    padding-bottom:6px;
+}
+
+#header .social {
+    margin-top: 40px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#header .social a{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    margin-right: 10px;
+    border-radius: 50%;
+
+}
+
+/* make it responsive */
+@media (max-width:992px) {
+    #header h1 {
+        font-size: 36px;
+    }
+    #header h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #header .social {
+        margin-top: 15px;
+    }
+
+    #header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*======= Navigation Menu=======*/
+.nav-menu {
+    margin-top: -500px;
+    margin-left: 80%;
+}
+
+.nav-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu li + li {
+    margin-left: 50px;
+}
+
+.nav-menu a {
+    display: block;
+    position: relative;
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.nav-menu a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 4px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover::before,
+.nav-menu li:hover > a:before,
+.nav-menu .nav-item active > a::before{
+    visibility: visible;
+    width: 25px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+    color: orange;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+
+/* ========== About Section ========== */
+#about {
+    background-color: rgba(252, 250, 249, 0.5);
+}
+
+.span4 img {
+    margin-right: 30px;
+}
+
+.span4 .img-left {
+    float: left;
+}
+
+.content-heading {
+    color: #fcfaf9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.call-to-action {
+    color: #fcfaf9;
+    display: flex;
+    margin-top: 40px;
+}
+
+.buttons {
+    margin-right: 20px;
+    border: 3px solid orange;
+    border-radius: 7px;
+    padding: 5px 15px;
+    width: fit-content;
+}
+
+.buttons:hover {
+    color: #fff;
+    background-color: orange;
+    text-decoration: none;
+}
+
+footer {
+    height: 8vh;
+    background: orange;
+    text-align: center;
+}
+
+.footer{
+    margin: 20px;
+    padding: 5px;
+}
+/* ========== End of Homepage Styling ========== */
+
+/* ========== About Page ========== */
+.about-page{
+    color: #274156;
+    margin: 0px;
+    padding:0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.about-header{
+    position: relative;
+    font-size: 36px;
+    font-weight: 400;
+    background-color: white;
+    color: #274156;
+}
+
+.about-header h2 {
+    margin-left: 40px;
+    color: #274156;
+}
+
+.section-one{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fcfaf9;
+}
+.section-container {
+    width: 80;
+    display: block;
+    margin: 0, auto;
+    padding-top: 100px;
+
+}
+
+.content-section-one {
+    float: left;
+    width: 50%;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.image-section-one {
+    float: right;
+    width: 40%;
+}
+
+.fit-screen {
+    width: 100%;
+    height: auto;
+}
+
+.content-section .title{
+    font-size: 28px;
+}
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: orange;
+    font-size: 21px;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.button .buttons {
+    background-color: orange;
+}
+
+.button .buttons:hover {
+    border-color: #461220;
+    background-color: #461220;
+}
+
+.about-mo {
+    margin-top: 280px;
+    display: flex;
+}
+
+.about-fields {
+    margin-right: 150px;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #274156;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about-fields:hover {
+    color: orange;
+}
+
+.section-two {
+    background-color: #fcfaf9;
+}
+
+.section-two .content-section-two p{
+    background-color: #274156;
+    color: #fcfaf9;
+    margin: 10px 40px;
+    padding: 10px 20px;
+}
+
+/* ========== END OF ABOUT PAGE ========== */
+
+/* ========== CONTACT PAGE ========== */
+.contact-form {
+    float: right;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.contact-page .nav-menu {
+    margin-top: -300px;
+    margin-left: 80%;
+}
+
+#form form {
+    margin-top: 40px;
+}
+
+/* ========== END OF CONTACT PAGE ========== */
+
+/* ========== FEEDBACK PAGE ========== */
+.card {
+    margin: 200px auto;
+}
+.card h1 {
+    color: orange;
+}
+
+.card h6, p {
+    color: #274156;
+}
+
+.card .nav-links {
+    text-align: center;
+}
+
+.card a {
+    color: orange;
+}
+
+.card a:hover {
+    color: #48E5C2;
+    text-decoration: underline;
+}
+
+.card h1, h6, p {
+    text-align: center;
+}
+
+.submit {
+    margin-top: 40px;
+}
